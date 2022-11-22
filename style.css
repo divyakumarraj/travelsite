@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Quicksand:wght@300;400&family=Rubik:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+
+/*logo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+/*tourexpert*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+
+*
+
+:root{
+  --orange:#ffa500;
+}
+
+*{
+ font-family: 'Rubik', sans-serif;
+
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+*::selection{
+  background:var(--orange);
+  color:#fff;
+}
+
+
+
+
+
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	min-height: 100vh;
+	background: #03a9f4;
+	transform: 0.5s;
+
+}
+body.active
+{
+	background: #f43648;
+	
+	transform: 1s;
+}
+.container
+{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	margin: 100px;
+}
+.blueBg
+{
+	position: absolute;
+	top: 40px;
+	width: 800px;
+	height: 420px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255,255,255,0.2);
+	box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+}
+.blueBg .box
+{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.blueBg .box h2
+{
+	color: #fff;
+	font-size:1.3em;
+	font-weight: 500;
+	margin-bottom: 10px; 
+
+}
+.blueBg .box button
+{
+	color: #333;
+	cursor: pointer;
+	padding: 10px 20px;
+	background: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	border:none;
+}
+
+/*header*/
+
+
+header{
+  position: fixed;
+font-family: 'Rubik', sans-serif;
+ border-radius: 50px;
+  top:10px; left: 80px; right:80px;
+  background:rgb(0,0,0,0.2);
+  z-index: 1001;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:0.3rem 5%;
+}
+header:hover
+{
+  background-color: #ABEBC6;
+}
+header .navbar a{
+  color:#333;
+font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+ flex-direction: row;
+  margin: 1rem;
+}
+
+header .navbar a:hover{
+  color:#ffa500;
+}
+
+
+header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-right: 5rem;
+ color:#ffa500;
+font-family: 'Mac', sans-serif;
+  text-transform: uppercase;
+}
+
+.btnn{
+  display: inline-block;
+  /*margin-top: 1rem;*/
+  background:#ffa500;
+  color:#1B4F72;
+  padding:.1rem 2rem;
+  border:.1rem solid #2E86C1;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 20px;
+
+}
+
+.btnn:hover{
+  background:rgba(93, 173, 226,0.5);
+  /*color:#fff;*/
+}
+
+/*close header*/
+
+
+.formBx
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 45px rgba(0,0,0,0.50);
+	transition: 0.5s ease-in-out;
+	overflow: hidden;
+}
+.formBx.active
+{
+	left: 50%;
+	 background-image: url("images/loginn.jpg");
+	  background-position: center center;
+	  background-size: cover;
+}
+.formBx .form
+{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding: 50px;
+	transition: 0.5s;
+}
+.formBx .signinForm
+{
+	transition-delay: 0s; 
+}
+.formBx.active .signinForm
+{
+	left: -100%;
+	transition-delay: 0s;
+
+}
+.formBx .signupForm
+{
+	left: 100%;
+	transition-delay: 0s;
+}
+.formBx.active .signupForm
+{
+	left: 0;
+	transition-delay: 0s;
+}
+.formBx .form form
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.formBx .form form h3
+{
+	color: #333;
+	font-weight: 500;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+}
+.formBx .form form input
+{
+	border:solid;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 16px;
+	border:1.5px solid #03a9f4;	
+
+}
+.formBx .form form input:hover
+{
+	border: 2px solid #03a9f4;
+}
+.formBx .form form input[type="submit"]
+{
+	background: #03a9f4;
+	border: none;
+	color: #fff;
+	max-width: 100px;
+	cursor:pointer;
+}
+.formBx .form form h5
+{
+	color: #333;
+	font-weight: 100;
+	margin-bottom: 10px;
+	font-size: 0.8em;
+}
+.formBx.active .signupForm form input
+{
+	border:1.5px solid #f43648;	
+
+}
+
+.formBx.active .signupForm form input:hover
+{
+	border: 2px solid #f43648;	
+}
+
+
+.formBx.active .signupForm input[type="submit"]
+{
+	background: #f43648;
+	border:1.5px solid #f43648;
+
+}
+.formBx .form form a
+{
+	color: #333;
+	text-decoration: none;
+	margin-top: 40px;
+}
+
+.formBx .form form a:hover
+{
+	color: #f43648;
+	text-decoration: underline;
+}
+
+.blueBg .box button:hover
+{
+	color: #339933;
+
+	border: 1.5px solid #339933;
+}
+
+
+@media (max-width: 991px)
+{
+	.container
+	{
+		max-width: 400px;
+		height: 650px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.container .blueBg
+	{
+		top: 0;
+		height: 100%;
+		width: 100%;
+
+	}
+	.formBx
+	{
+		width: 100%;
+		height: 500px;
+		top: 0;
+		box-shadow: none;
+	}
+	.blueBg .box
+	{
+		position: absolute;
+		width: 100%;
+		height: 150px;
+		bottom: 0;
+
+	}
+	.box.signin
+	{
+		top: 0;
+
+	}
+	.formBx.active
+	{
+		left: 0;
+		top: 150px;
+	}
+}
